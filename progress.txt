@@ -23,3 +23,10 @@
 状态：✅ 完成
 说明：成功在backend/目录创建Next.js项目，配置了TypeScript和ESLint，使用App Router，lint和build均通过
 
+--- 2026-03-12 18:35:00 ---
+任务 #2：配置Prisma和SQLite
+状态：✅ 完成
+说明：成功安装Prisma CLI和Client，初始化SQLite数据库连接，创建了prisma/schema.prisma文件，lint和build均通过
+
+
+

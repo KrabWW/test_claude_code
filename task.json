@@ -23,7 +23,7 @@
       "phase": "环境初始化",
       "title": "配置Prisma和SQLite",
       "description": "安装Prisma CLI和Client，初始化SQLite数据库连接，创建prisma/schema.prisma文件",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "5min"
     },
