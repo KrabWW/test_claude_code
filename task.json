@@ -40,8 +40,8 @@
       "id": 4,
       "phase": "数据模型",
       "title": "运行数据库迁移",
-      "description": "执行prisma migrate dev --name init创建数据库表，生成Prisma Client",
-      "status": "pending",
+      "description": "执行prisma migrate dev --name init创建数据库表,生成Prisma Client",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "3min"
     },
