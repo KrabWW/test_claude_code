@@ -36,7 +36,12 @@
 --- 2026-03-12 18:45:00 ---
 任务 #4：运行数据库迁移
 状态：✅ 完成
-说明：成功执行prisma migrate dev --name init创建数据库表，生成Prisma Client， lint和build均通过
+说明：成功执行prisma migrate dev --name init创建数据库表,生成Prisma Client, lint和build均通过
+
+--- 2026-03-12 18:50:00 ---
+任务 #5：创建Prisma客户端工具
+状态：✅ 完成
+说明:成功创建backend/lib/prisma.ts，导出Prisma Client单例，lint和build均通过
 
 
 

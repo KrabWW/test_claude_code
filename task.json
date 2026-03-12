@@ -50,7 +50,7 @@
       "phase": "API开发",
       "title": "创建Prisma客户端工具",
       "description": "创建backend/lib/prisma.ts，导出Prisma Client单例",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "5min"
     },
