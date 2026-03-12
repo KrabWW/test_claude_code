@@ -176,7 +176,7 @@
       "phase": "前端开发",
       "title": "创建任务详情页面",
       "description": "创建frontend/src/views/TaskDetail.vue，显示任务详情，支持编辑和删除",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "20min"
     },
@@ -185,7 +185,7 @@
       "phase": "前端开发",
       "title": "实现任务编辑功能",
       "description": "在TaskDetail页面添加编辑模式，可修改所有字段",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "15min"
     },
@@ -194,7 +194,7 @@
       "phase": "前端开发",
       "title": "实现任务删除功能",
       "description": "添加删除按钮，确认对话框，删除后跳转列表",
-      "status": "pending",
+      "status": "completed",
       "priority": "medium",
       "estimated_time": "10min"
     },
@@ -203,7 +203,7 @@
       "phase": "前端开发",
       "title": "实现任务状态切换",
       "description": "添加状态切换按钮，支持TODO/IN_PROGRESS/DONE三种状态",
-      "status": "pending",
+      "status": "completed",
       "priority": "medium",
       "estimated_time": "15min"
     },
