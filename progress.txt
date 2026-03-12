@@ -80,3 +80,8 @@
 状态：✅ 完成
 说明：成功创建taskStore，管理任务列表和当前选中任务，创建了Task类型定义，配置了@路径别名，build通过
 
+--- 2026-03-13 02:18:00 ---
+任务 #14：创建API服务层
+状态：✅ 完成
+说明：成功创建frontend/src/api/taskApi.ts，封装axios，实现了getTasks、getTaskById、createTask、updateTask、deleteTask方法，build通过
+

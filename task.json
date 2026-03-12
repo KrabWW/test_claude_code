@@ -131,7 +131,7 @@
       "phase": "前端开发",
       "title": "创建API服务层",
       "description": "创建frontend/src/api/taskApi.ts，封装axios，实现CRUD方法",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "10min"
     },
