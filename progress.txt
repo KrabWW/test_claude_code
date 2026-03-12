@@ -49,3 +49,9 @@
 
 
 
+
+--- 2026-03-12 18:55:00 ---
+任务 #6：实现GET /api/tasks接口
+状态：✅ 完成
+说明：成功实现获取所有任务列表的API，支持status, priority, sortBy, sortOrder参数过滤和排序，同时修复了prisma.ts使用PrismaLibSql adapter的配置问题，lint和build均通过
+

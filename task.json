@@ -58,8 +58,8 @@
       "id": 6,
       "phase": "API开发",
       "title": "实现GET /api/tasks接口",
-      "description": "获取所有任务列表，支持query参数：status, priority, sortBy, sortOrder",
-      "status": "pending",
+      "description": "获取所有任务列表,支持query参数：status, priority, sortBy, sortOrder",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "15min"
     },
