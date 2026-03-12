@@ -41,8 +41,16 @@ test.describe('任务管理系统', () => {
   })
 
   test('更新任务', async ({ page }) => {
-    // 点击任务进入详情
-    await page.getByRole('heading', { name: '更新测试任务' }).click()
+    // 先创建一个用于更新的任务
+    const updateTaskTitle = `更新测试任务_${Date.now()}`
+
+    await page.click('button:has-text("+ 新建任务")')
+    await page.fill('#title', updateTaskTitle)
+    await page.click('button[type="submit"]')
+    await expect(page).toHaveURL(/.*localhost:5173\/$/, { timeout: 10000 })
+
+    // 点击刚创建的任务进入详情
+    await page.getByRole('heading', { name: updateTaskTitle }).click()
 
     // 等待详情页加载
     await expect(page.locator('.task-title').first()).toBeVisible()
