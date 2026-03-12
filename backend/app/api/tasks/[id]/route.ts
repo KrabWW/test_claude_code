@@ -3,6 +3,20 @@ import { prisma } from "@/lib/prisma";
 
 import { TaskStatus, TaskPriority } from "@prisma/client";
 
+// CORS headers helper
+function corsHeaders() {
+  return {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, Authorization",
+  };
+}
+
+// Handle OPTIONS request for CORS
+export async function OPTIONS() {
+  return NextResponse.json({}, { headers: corsHeaders() });
+}
+
 interface RouteParams {
   params: Promise<{ id: string }>;
 }
@@ -26,7 +40,7 @@ export async function GET(
     if (isNaN(id)) {
       return NextResponse.json(
         { error: "Invalid task ID" },
-        { status: 400 }
+        { status: 400, headers: corsHeaders() }
       );
     }
 
@@ -37,16 +51,16 @@ export async function GET(
     if (!task) {
       return NextResponse.json(
         { error: "Task not found" },
-        { status: 404 }
+        { status: 404, headers: corsHeaders() }
       );
     }
 
-    return NextResponse.json(task);
+    return NextResponse.json(task, { headers: corsHeaders() });
   } catch (error) {
     console.error("Error fetching task:", error);
     return NextResponse.json(
       { error: "Failed to fetch task" },
-      { status: 500 }
+      { status: 500, headers: corsHeaders() }
     );
   }
 }
@@ -62,7 +76,7 @@ export async function PUT(
     if (isNaN(id)) {
       return NextResponse.json(
         { error: "Invalid task ID" },
-        { status: 400 }
+        { status: 400, headers: corsHeaders() }
       );
     }
 
@@ -76,7 +90,7 @@ export async function PUT(
     if (!existingTask) {
       return NextResponse.json(
         { error: "Task not found" },
-        { status: 404 }
+        { status: 404, headers: corsHeaders() }
       );
     }
 
@@ -113,12 +127,12 @@ export async function PUT(
       data: updateData,
     });
 
-    return NextResponse.json(updatedTask);
+    return NextResponse.json(updatedTask, { headers: corsHeaders() });
   } catch (error) {
     console.error("Error updating task:", error);
     return NextResponse.json(
       { error: "Failed to update task" },
-      { status: 500 }
+      { status: 500, headers: corsHeaders() }
     );
   }
 }
@@ -134,7 +148,7 @@ export async function DELETE(
     if (isNaN(id)) {
       return NextResponse.json(
         { error: "Invalid task ID" },
-        { status: 400 }
+        { status: 400, headers: corsHeaders() }
       );
     }
 
@@ -146,7 +160,7 @@ export async function DELETE(
     if (!existingTask) {
       return NextResponse.json(
         { error: "Task not found" },
-        { status: 404 }
+        { status: 404, headers: corsHeaders() }
       );
     }
 
@@ -155,12 +169,12 @@ export async function DELETE(
       where: { id },
     });
 
-    return new NextResponse(null, { status: 204 });
+    return new NextResponse(null, { status: 204, headers: corsHeaders() });
   } catch (error) {
     console.error("Error deleting task:", error);
     return NextResponse.json(
       { error: "Failed to delete task" },
-      { status: 500 }
+      { status: 500, headers: corsHeaders() }
     );
   }
 }

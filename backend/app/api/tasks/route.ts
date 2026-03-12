@@ -1,8 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { TaskStatus, TaskPriority } from "@prisma/client";
-
 import { Prisma } from "@prisma/client";
+
+// CORS headers helper
+function corsHeaders() {
+  return {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, Authorization",
+  };
+}
+
+// Handle OPTIONS request for CORS
+export async function OPTIONS() {
+  return NextResponse.json({}, { headers: corsHeaders() });
+}
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
   try {
@@ -31,12 +44,12 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       orderBy,
     });
 
-    return NextResponse.json(tasks);
+    return NextResponse.json(tasks, { headers: corsHeaders() });
   } catch (error) {
     console.error("Error fetching tasks:", error);
     return NextResponse.json(
       { error: "Failed to fetch tasks" },
-      { status: 500 }
+      { status: 500, headers: corsHeaders() }
     );
   }
 }
@@ -56,7 +69,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     if (!body.title || typeof body.title !== "string" || body.title.trim() === "") {
       return NextResponse.json(
         { error: "title is required and must be a non-empty string" },
-        { status: 400 }
+        { status: 400, headers: corsHeaders() }
       );
     }
 
@@ -70,12 +83,12 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       },
     });
 
-    return NextResponse.json(task, { status: 201 });
+    return NextResponse.json(task, { status: 201, headers: corsHeaders() });
   } catch (error) {
     console.error("Error creating task:", error);
     return NextResponse.json(
       { error: "Failed to create task" },
-      { status: 500 }
+      { status: 500, headers: corsHeaders() }
     );
   }
 }

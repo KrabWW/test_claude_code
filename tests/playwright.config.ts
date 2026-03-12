@@ -8,7 +8,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://localhost:3000',
+    baseURL: 'http://localhost:5173',
     trace: 'on-first-retry',
   },
   projects: [
@@ -19,14 +19,14 @@ export default defineConfig({
   ],
   webServer: [
     {
-      command: 'cd ../backend && npm run dev',
+      command: 'cd ../backend && PORT=3001 npm run dev',
       url: 'http://localhost:3001/api/tasks',
       reuseExistingServer: !process.env.CI,
       timeout: 120 * 1000,
     },
     {
       command: 'cd ../frontend && npm run dev',
-      url: 'http://localhost:3000',
+      url: 'http://localhost:5173',
       reuseExistingServer: !process.env.CI,
       timeout: 120 * 1000,
     },
