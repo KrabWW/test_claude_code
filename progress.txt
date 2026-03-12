@@ -90,3 +90,13 @@
 状态：✅ 完成
 说明：已在任务#13中完成，定义了Task、CreateTaskInput、UpdateTaskInput、TaskQueryParams类型和TaskStatus、TaskPriority常量
 
+--- 2026-03-13 02:25:00 ---
+任务 #16：创建任务列表页面
+状态：✅ 完成
+说明：成功创建TaskList.vue，展示所有任务，支持状态/优先级筛选和多字段排序，build通过
+
+--- 2026-03-13 02:25:00 ---
+任务 #17：创建任务卡片组件
+状态：✅ 完成
+说明：成功创建TaskCard.vue，显示单个任务信息，包含标题、描述、状态、优先级、截止日期等，支持点击查看详情，build通过
+

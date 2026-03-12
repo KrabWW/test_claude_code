@@ -149,7 +149,7 @@
       "phase": "前端开发",
       "title": "创建任务列表页面",
       "description": "创建frontend/src/views/TaskList.vue，展示所有任务，支持筛选和排序",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "20min"
     },
@@ -158,7 +158,7 @@
       "phase": "前端开发",
       "title": "创建任务卡片组件",
       "description": "创建frontend/src/components/TaskCard.vue，显示单个任务信息，支持点击查看详情",
-      "status": "pending",
+      "status": "completed",
       "priority": "medium",
       "estimated_time": "15min"
     },
