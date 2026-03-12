@@ -70,3 +70,8 @@
 状态：✅ 完成
 说明：成功在frontend/目录创建Vue 3 + Vite + TypeScript项目，安装了vue-router、pinia、axios，修复了TypeScript类型声明问题，build通过
 
+--- 2026-03-13 02:10:00 ---
+任务 #12：配置Vue Router
+状态：✅ 完成
+说明：成功配置Vue Router，设置路由：/(任务列表), /tasks/:id(任务详情), /create(创建任务)，创建了对应的视图组件占位，build通过
+

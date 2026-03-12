@@ -1,7 +1,15 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup lang="ts">
+// App 根组件
 </script>
 
 <template>
-  <HelloWorld />
+  <div id="app">
+    <RouterView />
+  </div>
 </template>
+
+<style>
+#app {
+  min-height: 100vh;
+}
+</style>
