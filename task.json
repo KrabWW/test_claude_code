@@ -140,7 +140,7 @@
       "phase": "前端开发",
       "title": "创建TypeScript类型定义",
       "description": "创建frontend/src/types/task.ts，定义Task接口和API响应类型",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "5min"
     },

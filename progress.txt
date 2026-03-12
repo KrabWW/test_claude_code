@@ -85,3 +85,8 @@
 状态：✅ 完成
 说明：成功创建frontend/src/api/taskApi.ts，封装axios，实现了getTasks、getTaskById、createTask、updateTask、deleteTask方法，build通过
 
+--- 2026-03-13 02:20:00 ---
+任务 #15：创建TypeScript类型定义
+状态：✅ 完成
+说明：已在任务#13中完成，定义了Task、CreateTaskInput、UpdateTaskInput、TaskQueryParams类型和TaskStatus、TaskPriority常量
+
