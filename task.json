@@ -212,7 +212,7 @@
       "phase": "UI优化",
       "title": "添加基础样式",
       "description": "使用CSS美化界面，添加卡片样式、按钮样式、表单样式",
-      "status": "pending",
+      "status": "completed",
       "priority": "medium",
       "estimated_time": "20min"
     },
