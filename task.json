@@ -167,7 +167,7 @@
       "phase": "前端开发",
       "title": "创建任务创建表单",
       "description": "创建frontend/src/views/TaskCreate.vue，包含所有字段的表单，提交后跳转列表",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "20min"
     },
