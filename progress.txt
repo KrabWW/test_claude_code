@@ -65,3 +65,8 @@
 状态：✅ 完成
 说明：成功实现删除任务的DELETE方法，任务不存在返回404，成功删除返回204，lint和build均通过
 
+--- 2026-03-13 02:05:00 ---
+任务 #11：初始化Vue前端项目
+状态：✅ 完成
+说明：成功在frontend/目录创建Vue 3 + Vite + TypeScript项目，安装了vue-router、pinia、axios，修复了TypeScript类型声明问题，build通过
+

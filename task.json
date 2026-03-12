@@ -104,7 +104,7 @@
       "phase": "前端初始化",
       "title": "初始化Vue前端项目",
       "description": "在frontend/目录创建Vue 3 + Vite + TypeScript项目，选择Vue Router和Pinia",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "5min"
     },
