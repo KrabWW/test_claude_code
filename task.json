@@ -95,7 +95,7 @@
       "phase": "API开发",
       "title": "实现DELETE /api/tasks/[id]接口",
       "description": "删除任务，不存在返回404，成功返回204",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "10min"
     },
