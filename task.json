@@ -1,0 +1,353 @@
+{
+  "project": "任务管理系统 (Task Manager)",
+  "version": "1.0.0",
+  "created_at": "2026-03-12",
+  "tech_stack": {
+    "backend": "Next.js API Routes + TypeScript",
+    "frontend": "Vue 3 + Vite + TypeScript",
+    "database": "SQLite + Prisma",
+    "testing": "Playwright"
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "phase": "环境初始化",
+      "title": "初始化Next.js后端项目",
+      "description": "在backend/目录创建Next.js项目，配置TypeScript和ESLint，不使用src目录，使用App Router",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "5min"
+    },
+    {
+      "id": 2,
+      "phase": "环境初始化",
+      "title": "配置Prisma和SQLite",
+      "description": "安装Prisma CLI和Client，初始化SQLite数据库连接，创建prisma/schema.prisma文件",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "5min"
+    },
+    {
+      "id": 3,
+      "phase": "数据模型",
+      "title": "创建Task数据模型",
+      "description": "在schema.prisma中定义Task表：id(Int, auto), title(String), description(String?), status(Enum: TODO/IN_PROGRESS/DONE), priority(Enum: LOW/MEDIUM/HIGH), dueDate(DateTime?), createdAt(DateTime), updatedAt(DateTime)",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 4,
+      "phase": "数据模型",
+      "title": "运行数据库迁移",
+      "description": "执行prisma migrate dev --name init创建数据库表，生成Prisma Client",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "3min"
+    },
+    {
+      "id": 5,
+      "phase": "API开发",
+      "title": "创建Prisma客户端工具",
+      "description": "创建backend/lib/prisma.ts，导出Prisma Client单例",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "5min"
+    },
+    {
+      "id": 6,
+      "phase": "API开发",
+      "title": "实现GET /api/tasks接口",
+      "description": "获取所有任务列表，支持query参数：status, priority, sortBy, sortOrder",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "15min"
+    },
+    {
+      "id": 7,
+      "phase": "API开发",
+      "title": "实现POST /api/tasks接口",
+      "description": "创建新任务，验证必填字段(title)，设置默认值，返回创建的任务",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "15min"
+    },
+    {
+      "id": 8,
+      "phase": "API开发",
+      "title": "实现GET /api/tasks/[id]接口",
+      "description": "获取单个任务详情，不存在返回404",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 9,
+      "phase": "API开发",
+      "title": "实现PUT /api/tasks/[id]接口",
+      "description": "更新任务信息，只更新提供的字段，更新updatedAt时间戳",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "15min"
+    },
+    {
+      "id": 10,
+      "phase": "API开发",
+      "title": "实现DELETE /api/tasks/[id]接口",
+      "description": "删除任务，不存在返回404，成功返回204",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 11,
+      "phase": "前端初始化",
+      "title": "初始化Vue前端项目",
+      "description": "在frontend/目录创建Vue 3 + Vite + TypeScript项目，选择Vue Router和Pinia",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "5min"
+    },
+    {
+      "id": 12,
+      "phase": "前端初始化",
+      "title": "配置Vue Router",
+      "description": "设置路由：/(任务列表), /tasks/:id(任务详情), /create(创建任务)",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 13,
+      "phase": "前端初始化",
+      "title": "配置Pinia状态管理",
+      "description": "创建taskStore，管理任务列表和当前选中任务",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 14,
+      "phase": "前端开发",
+      "title": "创建API服务层",
+      "description": "创建frontend/src/api/taskApi.ts，封装axios，实现CRUD方法",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 15,
+      "phase": "前端开发",
+      "title": "创建TypeScript类型定义",
+      "description": "创建frontend/src/types/task.ts，定义Task接口和API响应类型",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "5min"
+    },
+    {
+      "id": 16,
+      "phase": "前端开发",
+      "title": "创建任务列表页面",
+      "description": "创建frontend/src/views/TaskList.vue，展示所有任务，支持筛选和排序",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "20min"
+    },
+    {
+      "id": 17,
+      "phase": "前端开发",
+      "title": "创建任务卡片组件",
+      "description": "创建frontend/src/components/TaskCard.vue，显示单个任务信息，支持点击查看详情",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_time": "15min"
+    },
+    {
+      "id": 18,
+      "phase": "前端开发",
+      "title": "创建任务创建表单",
+      "description": "创建frontend/src/views/TaskCreate.vue，包含所有字段的表单，提交后跳转列表",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "20min"
+    },
+    {
+      "id": 19,
+      "phase": "前端开发",
+      "title": "创建任务详情页面",
+      "description": "创建frontend/src/views/TaskDetail.vue，显示任务详情，支持编辑和删除",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "20min"
+    },
+    {
+      "id": 20,
+      "phase": "前端开发",
+      "title": "实现任务编辑功能",
+      "description": "在TaskDetail页面添加编辑模式，可修改所有字段",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "15min"
+    },
+    {
+      "id": 21,
+      "phase": "前端开发",
+      "title": "实现任务删除功能",
+      "description": "添加删除按钮，确认对话框，删除后跳转列表",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 22,
+      "phase": "前端开发",
+      "title": "实现任务状态切换",
+      "description": "添加状态切换按钮，支持TODO/IN_PROGRESS/DONE三种状态",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_time": "15min"
+    },
+    {
+      "id": 23,
+      "phase": "UI优化",
+      "title": "添加基础样式",
+      "description": "使用CSS美化界面，添加卡片样式、按钮样式、表单样式",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_time": "20min"
+    },
+    {
+      "id": 24,
+      "phase": "UI优化",
+      "title": "实现响应式布局",
+      "description": "使用CSS媒体查询，适配手机(375px)和桌面(1440px)端",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_time": "15min"
+    },
+    {
+      "id": 25,
+      "phase": "E2E测试",
+      "title": "配置Playwright",
+      "description": "在tests/目录安装Playwright，创建playwright.config.ts，配置baseURL",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "5min"
+    },
+    {
+      "id": 26,
+      "phase": "E2E测试",
+      "title": "编写创建任务测试",
+      "description": "创建tests/crud.spec.ts，测试任务创建流程：打开页面→填写表单→提交→验证列表显示",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "15min"
+    },
+    {
+      "id": 27,
+      "phase": "E2E测试",
+      "title": "编写读取任务测试",
+      "description": "测试任务列表显示和详情查看",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 28,
+      "phase": "E2E测试",
+      "title": "编写更新任务测试",
+      "description": "测试任务编辑功能：进入详情→点击编辑→修改字段→保存→验证更新",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "15min"
+    },
+    {
+      "id": 29,
+      "phase": "E2E测试",
+      "title": "编写删除任务测试",
+      "description": "测试任务删除功能：进入详情→点击删除→确认→验证列表中不存在",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 30,
+      "phase": "E2E测试",
+      "title": "编写完整CRUD流程测试",
+      "description": "端到端测试：创建→读取→更新→删除，验证整个流程",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "20min"
+    },
+    {
+      "id": 31,
+      "phase": "集成测试",
+      "title": "启动后端服务并验证",
+      "description": "cd backend && npm run dev，验证http://localhost:3001/api/tasks可访问",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 32,
+      "phase": "集成测试",
+      "title": "启动前端服务并验证",
+      "description": "cd frontend && npm run dev，验证http://localhost:3000可访问",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 33,
+      "phase": "集成测试",
+      "title": "运行所有E2E测试",
+      "description": "执行npx playwright test，确保全部通过",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "15min"
+    },
+    {
+      "id": 34,
+      "phase": "Bug修复",
+      "title": "修复E2E测试发现的问题",
+      "description": "根据测试结果修复bug，重新运行测试直到全部通过",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "30min"
+    },
+    {
+      "id": 35,
+      "phase": "收尾",
+      "title": "添加README文档",
+      "description": "创建README.md，包含项目说明、技术栈、安装和运行指南",
+      "status": "pending",
+      "priority": "low",
+      "estimated_time": "10min"
+    },
+    {
+      "id": 36,
+      "phase": "收尾",
+      "title": "最终验证",
+      "description": "手动验证所有功能正常工作，确保npm run build通过",
+      "status": "pending",
+      "priority": "high",
+      "estimated_time": "15min"
+    }
+  ],
+  "statistics": {
+    "total_tasks": 36,
+    "phases": {
+      "环境初始化": 2,
+      "数据模型": 2,
+      "API开发": 6,
+      "前端初始化": 3,
+      "前端开发": 8,
+      "UI优化": 2,
+      "E2E测试": 6,
+      "集成测试": 3,
+      "Bug修复": 1,
+      "收尾": 2
+    },
+    "estimated_total_time": "~5小时"
+  }
+}
