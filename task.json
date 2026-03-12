@@ -14,7 +14,7 @@
       "phase": "环境初始化",
       "title": "初始化Next.js后端项目",
       "description": "在backend/目录创建Next.js项目，配置TypeScript和ESLint，不使用src目录，使用App Router",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "5min"
     },

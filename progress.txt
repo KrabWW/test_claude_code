@@ -18,3 +18,8 @@
 ---
 开始开发...
 
+--- 2026-03-12 18:30:00 ---
+任务 #1：初始化Next.js后端项目
+状态：✅ 完成
+说明：成功在backend/目录创建Next.js项目，配置了TypeScript和ESLint，使用App Router，lint和build均通过
+
