@@ -77,7 +77,7 @@
       "phase": "API开发",
       "title": "实现GET /api/tasks/[id]接口",
       "description": "获取单个任务详情，不存在返回404",
-      "status": "pending",
+      "status": "completed",
       "priority": "medium",
       "estimated_time": "10min"
     },
@@ -86,7 +86,7 @@
       "phase": "API开发",
       "title": "实现PUT /api/tasks/[id]接口",
       "description": "更新任务信息，只更新提供的字段，更新updatedAt时间戳",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "15min"
     },

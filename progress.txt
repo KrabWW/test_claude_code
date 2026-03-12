@@ -55,3 +55,8 @@
 状态：✅ 完成
 说明：成功实现获取所有任务列表的API，支持status, priority, sortBy, sortOrder参数过滤和排序，同时修复了prisma.ts使用PrismaLibSql adapter的配置问题，lint和build均通过
 
+--- 2026-03-13 01:50:00 ---
+任务 #9：实现PUT /api/tasks/[id]接口
+状态：✅ 完成
+说明：成功实现更新任务的PUT方法，支持部分更新（只更新提供的字段），自动更新updatedAt时间戳，任务不存在返回404，lint和build均通过
+
