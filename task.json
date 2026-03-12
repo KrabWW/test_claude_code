@@ -221,7 +221,7 @@
       "phase": "UI优化",
       "title": "实现响应式布局",
       "description": "使用CSS媒体查询，适配手机(375px)和桌面(1440px)端",
-      "status": "pending",
+      "status": "completed",
       "priority": "medium",
       "estimated_time": "15min"
     },
