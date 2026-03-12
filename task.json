@@ -32,7 +32,7 @@
       "phase": "数据模型",
       "title": "创建Task数据模型",
       "description": "在schema.prisma中定义Task表：id(Int, auto), title(String), description(String?), status(Enum: TODO/IN_PROGRESS/DONE), priority(Enum: LOW/MEDIUM/HIGH), dueDate(DateTime?), createdAt(DateTime), updatedAt(DateTime)",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "10min"
     },

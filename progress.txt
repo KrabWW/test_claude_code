@@ -28,5 +28,12 @@
 状态：✅ 完成
 说明：成功安装Prisma CLI和Client，初始化SQLite数据库连接，创建了prisma/schema.prisma文件，lint和build均通过
 
+--- 2026-03-12 18:40:00 ---
+任务 #3：创建Task数据模型
+状态：✅ 完成
+说明：在schema.prisma中定义了Task表，包含id, title, description, status, priority, dueDate, createdAt, updatedAt字段，定义了TaskStatus和TaskPriority枚举类型
+
+
+
 
 
