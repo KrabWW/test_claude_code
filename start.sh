@@ -72,7 +72,7 @@ run_once() {
     echo -e "${YELLOW}开始执行下一个任务...${NC}"
     echo ""
 
-    claude "读取CLAUDE.md，按照工作流程完成下一个任务。完成后在progress.txt中记录结果。"
+    claude --dangerously-skip-permissions "读取CLAUDE.md，按照工作流程完成下一个任务。完成后在progress.txt中记录结果。"
 
     echo ""
     echo -e "${GREEN}=== 任务执行完成 ===${NC}"
@@ -102,7 +102,7 @@ run_loop() {
 
         show_status
 
-        claude "读取CLAUDE.md，按照工作流程完成下一个任务。完成后在progress.txt中记录结果。"
+        claude --dangerously-skip-permissions "读取CLAUDE.md，按照工作流程完成下一个任务。完成后在progress.txt中记录结果。"
 
         # 检查是否所有任务完成
         if ! check_pending_tasks; then
