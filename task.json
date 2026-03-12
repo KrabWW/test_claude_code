@@ -230,7 +230,7 @@
       "phase": "E2E测试",
       "title": "配置Playwright",
       "description": "在tests/目录安装Playwright，创建playwright.config.ts，配置baseURL",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "5min"
     },
@@ -239,7 +239,7 @@
       "phase": "E2E测试",
       "title": "编写创建任务测试",
       "description": "创建tests/crud.spec.ts，测试任务创建流程：打开页面→填写表单→提交→验证列表显示",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "15min"
     },
@@ -248,7 +248,7 @@
       "phase": "E2E测试",
       "title": "编写读取任务测试",
       "description": "测试任务列表显示和详情查看",
-      "status": "pending",
+      "status": "completed",
       "priority": "medium",
       "estimated_time": "10min"
     },
@@ -257,7 +257,7 @@
       "phase": "E2E测试",
       "title": "编写更新任务测试",
       "description": "测试任务编辑功能：进入详情→点击编辑→修改字段→保存→验证更新",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "15min"
     },
@@ -266,7 +266,7 @@
       "phase": "E2E测试",
       "title": "编写删除任务测试",
       "description": "测试任务删除功能：进入详情→点击删除→确认→验证列表中不存在",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "10min"
     },
@@ -275,7 +275,7 @@
       "phase": "E2E测试",
       "title": "编写完整CRUD流程测试",
       "description": "端到端测试：创建→读取→更新→删除，验证整个流程",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "20min"
     },
