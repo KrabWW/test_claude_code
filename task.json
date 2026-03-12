@@ -68,7 +68,7 @@
       "phase": "API开发",
       "title": "实现POST /api/tasks接口",
       "description": "创建新任务，验证必填字段(title)，设置默认值，返回创建的任务",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "15min"
     },
