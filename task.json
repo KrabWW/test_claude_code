@@ -284,7 +284,7 @@
       "phase": "集成测试",
       "title": "启动后端服务并验证",
       "description": "cd backend && npm run dev，验证http://localhost:3001/api/tasks可访问",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "10min"
     },
@@ -293,7 +293,7 @@
       "phase": "集成测试",
       "title": "启动前端服务并验证",
       "description": "cd frontend && npm run dev，验证http://localhost:3000可访问",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "10min"
     },
@@ -302,7 +302,7 @@
       "phase": "集成测试",
       "title": "运行所有E2E测试",
       "description": "执行npx playwright test，确保全部通过",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "15min"
     },
