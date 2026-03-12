@@ -311,7 +311,7 @@
       "phase": "Bug修复",
       "title": "修复E2E测试发现的问题",
       "description": "根据测试结果修复bug，重新运行测试直到全部通过",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "30min"
     },
@@ -320,7 +320,7 @@
       "phase": "收尾",
       "title": "添加README文档",
       "description": "创建README.md，包含项目说明、技术栈、安装和运行指南",
-      "status": "pending",
+      "status": "completed",
       "priority": "low",
       "estimated_time": "10min"
     },
@@ -329,7 +329,7 @@
       "phase": "收尾",
       "title": "最终验证",
       "description": "手动验证所有功能正常工作，确保npm run build通过",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "estimated_time": "15min"
     }
