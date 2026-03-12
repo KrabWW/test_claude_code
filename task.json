@@ -122,7 +122,7 @@
       "phase": "前端初始化",
       "title": "配置Pinia状态管理",
       "description": "创建taskStore，管理任务列表和当前选中任务",
-      "status": "pending",
+      "status": "completed",
       "priority": "medium",
       "estimated_time": "10min"
     },
